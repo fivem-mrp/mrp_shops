@@ -1,0 +1,71 @@
+{
+    "locale": {
+        "en": {
+            
+        }
+    }
+    "locations": [{
+        "id": "id1",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 272.125,
+        "x": 24.145,
+        "y": -1347.243,
+        "z": 29.482
+    }, {
+        "id": "id2",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 257.952,
+        "x": 372.356,
+        "y": 326.347,
+        "z": 103.553
+    }, {
+        "id": "id3",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 359.61,
+        "x": -3242.25,
+        "y": 999.89,
+        "z": 12.83
+    }, {
+        "id": "id4",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 23.22,
+        "x": -3038.88,
+        "y": 584.48,
+        "z": 7.91
+    }, {
+        "id": "id5",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 356.79,
+        "x": 2557.14,
+        "y": 380.61,
+        "z": 108.62
+    }, {
+        "id": "id5",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 101.32,
+        "x": 549.24,
+        "y": 2671.45,
+        "z": 42.16
+    }, {
+        "id": "id6",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 340.14,
+        "x": 2678.08,
+        "y": 3279.21,
+        "z": 55.24
+    }, {
+        "id": "id7",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 289.90,
+        "x": 1959.92,
+        "y": 3739.99,
+        "z": 289.90
+    }, {
+        "id": "id8",
+        "shopkeeperPed": "mp_m_shopkeep_01",
+        "heading": 244.28,
+        "x": 1727.59,
+        "y": 6415.16,
+        "z": 35.04
+    }]
+}
