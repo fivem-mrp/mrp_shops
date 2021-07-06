@@ -6,7 +6,7 @@ while (MRP_CLIENT == null) {
     print('Waiting for shared object....');
 }
 
-configFile = LoadResourceFile(GetCurrentResourceName(), 'config/client.json');
+configFile = LoadResourceFile(GetCurrentResourceName(), 'config/config.json');
 
 config = JSON.parse(configFile);
 
