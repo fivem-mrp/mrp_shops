@@ -12,6 +12,10 @@ configFile = LoadResourceFile(GetCurrentResourceName(), 'config/config.json');
 
 config = JSON.parse(configFile);
 
+if (config.showBlips) {
+    MRP_CLIENT.addBlips(config.locations);
+}
+
 let shopPed = null;
 let mySpawns = {};
 setInterval(() => {

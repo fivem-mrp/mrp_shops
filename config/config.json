@@ -4,9 +4,13 @@
             
         }
     },
+    "showBlips": true,
     "locations": [{
         "id": "id1",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 272.125,
         "x": 24.145,
         "y": -1347.243,
@@ -14,6 +18,9 @@
     }, {
         "id": "id2",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 257.952,
         "x": 372.356,
         "y": 326.347,
@@ -21,6 +28,9 @@
     }, {
         "id": "id3",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 359.61,
         "x": -3242.25,
         "y": 999.89,
@@ -28,6 +38,9 @@
     }, {
         "id": "id4",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 23.22,
         "x": -3038.88,
         "y": 584.48,
@@ -35,6 +48,9 @@
     }, {
         "id": "id5",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 356.79,
         "x": 2557.14,
         "y": 380.61,
@@ -42,6 +58,9 @@
     }, {
         "id": "id5",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 101.32,
         "x": 549.24,
         "y": 2671.45,
@@ -49,6 +68,9 @@
     }, {
         "id": "id6",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 340.14,
         "x": 2678.08,
         "y": 3279.21,
@@ -56,6 +78,9 @@
     }, {
         "id": "id7",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 289.90,
         "x": 1959.92,
         "y": 3739.99,
@@ -63,6 +88,9 @@
     }, {
         "id": "id8",
         "shopkeeperPed": "mp_m_shopkeep_01",
+        "blip": 52,
+        "blipColor": 9,
+        "blipName": "27/4",
         "heading": 244.28,
         "x": 1727.59,
         "y": 6415.16,
