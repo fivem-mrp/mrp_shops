@@ -1,7 +1,16 @@
 {
     "locale": {
         "en": {
-            "open_shop": "Open shop"
+            "open_shop": "Open shop",
+            "id1": "24/7",
+            "id2": "24/7",
+            "id3": "24/7",
+            "id4": "24/7",
+            "id5": "24/7",
+            "id6": "24/7",
+            "id7": "24/7",
+            "id8": "24/7",
+            "id9": "24/7"
         }
     },
     "showBlips": true,
@@ -56,7 +65,7 @@
         "y": 380.61,
         "z": 108.62
     }, {
-        "id": "id5",
+        "id": "id6",
         "shopkeeperPed": "mp_m_shopkeep_01",
         "blip": 52,
         "blipColor": 9,
@@ -66,7 +75,7 @@
         "y": 2671.45,
         "z": 42.16
     }, {
-        "id": "id6",
+        "id": "id7",
         "shopkeeperPed": "mp_m_shopkeep_01",
         "blip": 52,
         "blipColor": 9,
@@ -76,7 +85,7 @@
         "y": 3279.21,
         "z": 55.24
     }, {
-        "id": "id7",
+        "id": "id8",
         "shopkeeperPed": "mp_m_shopkeep_01",
         "blip": 52,
         "blipColor": 9,
@@ -86,7 +95,7 @@
         "y": 3739.99,
         "z": 289.90
     }, {
-        "id": "id8",
+        "id": "id9",
         "shopkeeperPed": "mp_m_shopkeep_01",
         "blip": 52,
         "blipColor": 9,
@@ -95,5 +104,474 @@
         "x": 1727.59,
         "y": 6415.16,
         "z": 35.04
-    }]
+    }],
+    "shopInventory": {
+        "id1": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],"id2": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id3": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id4": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id5": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id6": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id7": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id8": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ],
+        "id9": [
+            {
+                "name": "tosti",
+                "slot": 1,
+                "amount": 100,
+                "info": "xxx",
+                "price": 25
+            },
+            {
+                "name": "water_bottle",
+                "slot": 2,
+                "amount": 100,
+                "info": "",
+                "price": 10
+            },
+            {
+                "name": "kurkakola",
+                "slot": 3,
+                "amount": 100,
+                "price": 20
+            },
+            {
+                "name": "twerks_candy",
+                "slot": 4,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "snikkel_candy",
+                "slot": 5,
+                "amount": 100,
+                "price": 10
+            },
+            {
+                "name": "sandwich",
+                "slot": 6,
+                "amount": 100,
+                "price": 30
+            },
+            {
+                "name": "bandage",
+                "slot": 7,
+                "amount": 100,
+                "price": 50
+            },
+            {
+                "name": "firstaid",
+                "slot": 8,
+                "amount": 100,
+                "price": 100
+            }
+        ]
+    }
 }

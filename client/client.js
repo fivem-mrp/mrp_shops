@@ -22,6 +22,7 @@ if (config.showBlips) {
 
 let shopPed = null;
 let mySpawns = {};
+let currentLocation = null;
 setInterval(() => {
     for (let location of config.locations) {
         let ped = PlayerPedId();
@@ -66,7 +67,9 @@ setInterval(() => {
                     text: locale.open_shop,
                     action: 'https://mrp_shops/open'
                 });
+                currentLocation = location;
             } else {
+                currentLocation = null;
                 emit('mrp:thirdeye:removeMenuItem', {
                     id: 'shop'
                 });
@@ -77,6 +80,11 @@ setInterval(() => {
 
 RegisterNuiCallbackType('open');
 on('__cfx_nui:open', (data, cb) => {
-    console.log('Open shop');
     cb({});
+    if (!currentLocation)
+        return;
+
+    console.log('Open shop');
+
+    emitNet('mrp:shops:server:open', GetPlayerServerId(PlayerId()), currentLocation.id);
 });
