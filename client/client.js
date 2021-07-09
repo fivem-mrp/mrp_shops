@@ -6,11 +6,15 @@ while (MRP_CLIENT == null) {
     print('Waiting for shared object....');
 }
 
+let localeConvar = GetConvar("mrp_locale", "en");
+
 eval(LoadResourceFile('mrp_core', 'client/helpers.js'));
 
 configFile = LoadResourceFile(GetCurrentResourceName(), 'config/config.json');
 
 config = JSON.parse(configFile);
+
+locale = config.locale[localeConvar];
 
 if (config.showBlips) {
     MRP_CLIENT.addBlips(config.locations);
@@ -41,7 +45,7 @@ setInterval(() => {
                 SetPedHearingRange(shopPed, 0.0);
                 SetPedAlertness(shopPed, 0.0);
             }
-            //this is not a PED but to prevent multiple spawns in same locaiton as the above is async and will overwrite this anyway
+            //this is not a PED but to prevent mulFratiple spawns in same locaiton as the above is async and will overwrite this anyway
             mySpawns[location.id] = true;
             exec();
         } else if (!MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id] !== true && mySpawns[location.id] > 0) {
@@ -51,5 +55,28 @@ setInterval(() => {
             DeleteEntity(mySpawns[location.id]); // delete instead of marking
             mySpawns[location.id] = null;
         }
+
+        if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id] !== true && mySpawns[location.id] > 0) {
+            //check if looking at shop keeper
+            let pedInFront = MRP_CLIENT.getPedInFront();
+            if (pedInFront > 0 && mySpawns[location.id]) {
+                emit('mrp:thirdeye:addMenuItem', {
+                    locationId: location.id,
+                    id: 'shop',
+                    text: locale.open_shop,
+                    action: 'https://mrp_shops/open'
+                });
+            } else {
+                emit('mrp:thirdeye:removeMenuItem', {
+                    id: 'shop'
+                });
+            }
+        }
     }
 }, 0);
+
+RegisterNuiCallbackType('open');
+on('__cfx_nui:open', (data, cb) => {
+    console.log('Open shop');
+    cb({});
+});
