@@ -19,6 +19,7 @@ setInterval(() => {
         let ped = PlayerPedId();
         if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && !mySpawns[location.id]) {
             let exec = async function() {
+                console.log(`Add PED for location [${location.id}]`);
                 //is near spawn NPC
                 let modelHash = GetHashKey(location.shopkeeperPed);
                 RequestModel(modelHash);
@@ -36,11 +37,14 @@ setInterval(() => {
                 SetPedHearingRange(shopPed, 0.0);
                 SetPedAlertness(shopPed, 0.0);
             }
+            //this is not a PED but to prevent multiple spawns in same locaiton as the above is async and will overwrite this anyway
+            mySpawns[location.id] = true;
             exec();
         } else if (!MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id]) {
+            console.log(`Remove PED for location [${location.id}]`);
             //spawned ped before remove
-            SetEntityAsNoLongerNeeded(myspawns[location.id], true);
-            myspawns[location.id] = null;
+            SetEntityAsNoLongerNeeded(mySpawns[location.id], true);
+            mySpawns[location.id] = null;
         }
     }
 }, 0);
