@@ -44,10 +44,11 @@ setInterval(() => {
             //this is not a PED but to prevent multiple spawns in same locaiton as the above is async and will overwrite this anyway
             mySpawns[location.id] = true;
             exec();
-        } else if (!MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id]) {
+        } else if (!MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id] !== true && mySpawns[location.id] > 0) {
             console.log(`Remove PED for location [${location.id}]`);
             //spawned ped before remove
-            SetEntityAsNoLongerNeeded(mySpawns[location.id], true);
+            //SetEntityAsNoLongerNeeded(mySpawns[location.id], true);
+            DeleteEntity(mySpawns[location.id]); // delete instead of marking
             mySpawns[location.id] = null;
         }
     }
