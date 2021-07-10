@@ -21,7 +21,9 @@
             "id17": "Ammunation",
             "id18": "Ammunation",
             "id19": "Ammunation",
-            "id20": "Ammunation"
+            "id20": "Ammunation",
+            "id21": "Hardware store",
+            "id22": "Hardware store"
         }
     },
     "showBlips": true,
@@ -225,6 +227,26 @@
         "x": 844.32,
         "y": -1035.39,
         "z": 28.19
+    }, {
+        "id": "id21",
+        "shopkeeperPed": "s_m_y_construct_01",
+        "blip": 402,
+        "blipColor": 24,
+        "blipName": "Hardware store",
+        "heading": 249.44,
+        "x": 2750.01,
+        "y": 3471.62,
+        "z": 55.68
+    }, {
+        "id": "id22",
+        "shopkeeperPed": "s_m_y_construct_01",
+        "blip": 402,
+        "blipColor": 24,
+        "blipName": "Hardware store",
+        "heading": 39.69,
+        "x": 46.27,
+        "y": -1749.28,
+        "z": 29.63
     }],
     "shopInventory": {
         "id1": [
@@ -935,6 +957,18 @@
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+        ],
+        "id21": [
+            {"name": "lockpick","slot": 1,"amount": 100,"price": 500},
+            {"name": "repairkit","slot": 2,"amount": 100,"price": 1500},
+            {"name": "advancedrepairkit","slot": 3,"amount": 100,"price": 3000},
+            {"name": "weapon_wrench","slot": 4,"amount": 100,"price": 1000}
+        ],
+        "id22": [
+            {"name": "lockpick","slot": 1,"amount": 100,"price": 500},
+            {"name": "repairkit","slot": 2,"amount": 100,"price": 1500},
+            {"name": "advancedrepairkit","slot": 3,"amount": 100,"price": 3000},
+            {"name": "weapon_wrench","slot": 4,"amount": 100,"price": 1000}
         ]
     }
 }
