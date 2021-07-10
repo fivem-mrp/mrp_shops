@@ -38,6 +38,7 @@ setInterval(() => {
 
                 shopPed = CreatePed(GetPedType(location.shopkeeperPed), location.shopkeeperPed, location.x, location.y, location.z, location.heading, true, true);
                 mySpawns[location.id] = shopPed;
+                SetBlockingOfNonTemporaryEvents(shopPed, true);
                 SetPedKeepTask(shopPed, true);
                 SetPedDropsWeaponsWhenDead(shopPed, false);
                 SetPedFleeAttributes(shopPed, 0, 0);
