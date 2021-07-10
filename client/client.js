@@ -26,11 +26,11 @@ let currentLocation = null;
 setInterval(() => {
     for (let location of config.locations) {
         let ped = PlayerPedId();
-        if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && !mySpawns[location.id]) {
+        let modelHash = GetHashKey(location.shopkeeperPed);
+        if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && !mySpawns[location.id] && !MRP_CLIENT.isPedNearCoords(location.x, location.y, location.z, null, modelHash)) {
             let exec = async function() {
                 console.log(`Add PED for location [${location.id}]`);
                 //is near spawn NPC
-                let modelHash = GetHashKey(location.shopkeeperPed);
                 RequestModel(modelHash);
                 while (!HasModelLoaded(modelHash)) {
                     await utils.sleep(100);
@@ -52,8 +52,8 @@ setInterval(() => {
         } else if (!MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id] !== true && mySpawns[location.id] > 0) {
             console.log(`Remove PED for location [${location.id}]`);
             //spawned ped before remove
-            //SetEntityAsNoLongerNeeded(mySpawns[location.id], true);
-            DeleteEntity(mySpawns[location.id]); // delete instead of marking
+            SetEntityAsNoLongerNeeded(mySpawns[location.id], true);
+            //DeleteEntity(mySpawns[location.id]); // delete instead of marking
             mySpawns[location.id] = null;
         }
 
