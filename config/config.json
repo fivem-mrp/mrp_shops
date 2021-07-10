@@ -736,7 +736,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id11": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -758,7 +759,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id12": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -780,7 +782,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id13": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -802,7 +805,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id14": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -824,7 +828,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id15": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -846,7 +851,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id16": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -868,7 +874,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id17": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -890,7 +897,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id18": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -912,7 +920,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id19": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -934,7 +943,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id20": [
             {"name": "weapon_knife","slot": 1,"amount": 100,"price": 100},
@@ -956,7 +966,8 @@
             {"name": "smg_ammo","slot": 17,"amount": 100,"price": 250},
             {"name": "shotgun_ammo","slot": 18,"amount": 100,"price": 250},
             {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
-            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250}
+            {"name": "mg_ammo","slot": 19,"amount": 100,"price": 250},
+            {"name": "armor","slot": 20,"amount": 100,"price": 1000}
         ],
         "id21": [
             {"name": "lockpick","slot": 1,"amount": 100,"price": 500},
