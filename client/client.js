@@ -23,14 +23,16 @@ if (config.showBlips) {
 let shopPed = null;
 let mySpawns = {};
 let currentLocation = null;
-setInterval(() => {
+
+on('onClientResourceStart', (name) => {
+    if (name != GetCurrentResourceName())
+        return;
+
     for (let location of config.locations) {
-        let ped = PlayerPedId();
         let modelHash = GetHashKey(location.shopkeeperPed);
-        if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && !mySpawns[location.id] && !MRP_CLIENT.isPedNearCoords(location.x, location.y, location.z, null, modelHash)) {
-            let exec = async function() {
+        let exec = async function() {
+            if (!MRP_CLIENT.isPedNearCoords(location.x, location.y, location.z, null, modelHash)) {
                 console.log(`Add PED for location [${location.id}]`);
-                //is near spawn NPC
                 RequestModel(modelHash);
                 while (!HasModelLoaded(modelHash)) {
                     await utils.sleep(100);
@@ -46,22 +48,21 @@ setInterval(() => {
                 SetPedSeeingRange(shopPed, 0.0);
                 SetPedHearingRange(shopPed, 0.0);
                 SetPedAlertness(shopPed, 0.0);
+                SetEntityInvincible(shopPed, true);
             }
-            //this is not a PED but to prevent mulFratiple spawns in same locaiton as the above is async and will overwrite this anyway
-            mySpawns[location.id] = true;
-            exec();
-        } else if (!MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id] !== true && mySpawns[location.id] > 0) {
-            console.log(`Remove PED for location [${location.id}]`);
-            //spawned ped before remove
-            SetEntityAsNoLongerNeeded(mySpawns[location.id], true);
-            //DeleteEntity(mySpawns[location.id]); // delete instead of marking
-            mySpawns[location.id] = null;
-        }
+        };
+        exec();
+    }
+});
 
-        if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && mySpawns[location.id] !== true && mySpawns[location.id] > 0) {
+setInterval(() => {
+    for (let location of config.locations) {
+        let ped = PlayerPedId();
+        let modelHash = GetHashKey(location.shopkeeperPed);
+        if (MRP_CLIENT.isNearLocation(ped, location.x, location.y, location.z) && MRP_CLIENT.isPedNearCoords(location.x, location.y, location.z, null, modelHash)) {
             //check if looking at shop keeper
             let pedInFront = MRP_CLIENT.getPedInFront();
-            if (pedInFront > 0 && mySpawns[location.id]) {
+            if (pedInFront > 0) {
                 emit('mrp:thirdeye:addMenuItem', {
                     locationId: location.id,
                     id: 'shop',
