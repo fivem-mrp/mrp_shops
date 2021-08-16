@@ -22,10 +22,7 @@ if (config.showBlips) {
 
 let currentLocation = null;
 
-on('onClientResourceStart', (name) => {
-    if (name != GetCurrentResourceName())
-        return;
-
+onNet('mrp:spawn', (name) => {
     for (let location of config.locations) {
         MRP_CLIENT.spawnSharedNPC({
             model: location.shopkeeperPed,
